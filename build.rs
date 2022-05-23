@@ -26,13 +26,13 @@ fn main() {
         compile_css.env(OPT_ENV_KEY, OPT_ENV_VAL);
     }
 
-	// See config for more information
-	compile_css.args(["-c", "./tailwind.config.js", "-o", "./tailwind.css"]);
+    // See config for more information
+    compile_css.args(["-c", "./tailwind.config.js", "-o", "./tailwind.css"]);
 
     // Give more granular results if an error occurs
     if let Err(e) = compile_css.spawn() {
         match e.kind() {
-			// Tailwind is REQUIRED
+            // Tailwind is REQUIRED
             ErrorKind::NotFound => error!(
                 "Unable to run {CSS_BACKEND}: {e}. Please make sure {CSS_BACKEND} \
 				is installed and in your PATH."
