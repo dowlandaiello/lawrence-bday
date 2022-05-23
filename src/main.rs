@@ -1,4 +1,4 @@
-use yew::{Component, Context, Html};
+use yew::{Component, Context, Html, html};
 
 /// The root. No props needed.
 struct App;
@@ -11,12 +11,12 @@ impl Component for App {
         Self
     }
 
-    fn view(&self, ctx: &Context<Self>) -> Html {
+    fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
         }
     }
 }
 
 fn main() {
-    yew::start_app<App>();
+    yew::start_app::<App>();
 }
