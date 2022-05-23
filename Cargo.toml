@@ -1,0 +1,11 @@
+[package]
+name = "lawrence-bday"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = "0.19.3"
+
+[build-dependencies]
+log = "0.4.17"
+env_logger = "0.9.0"
