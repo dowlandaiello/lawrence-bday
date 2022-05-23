@@ -13,6 +13,8 @@ Cargo.lock
 # Added by cargo
 
 /target
+/dist
 
 # Morbillion class names
 tailwind.css
+.vscode
