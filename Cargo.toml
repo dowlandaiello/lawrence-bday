@@ -5,6 +5,11 @@ edition = "2021"
 
 [dependencies]
 yew = "0.19.3"
+include_dir = "0.7.2"
+gloo-timers = "0.2.4"
+console_log = { version = "0.2", features = ["color"] }
+log = "0.4.17"
+lazy_static = "1.4.0"
 
 [build-dependencies]
 log = "0.4.17"

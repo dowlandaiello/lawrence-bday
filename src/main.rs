@@ -1,22 +1,29 @@
-use yew::{Component, Context, Html, html};
+mod sections;
+mod util;
 
-/// The root. No props needed.
-struct App;
+use yew::{function_component, html};
+use sections::{landing_hero::MainHero, recap::RecapSection};
+use util::nav::NavBar;
+use console_log::init_with_level;
+use log::Level;
 
-impl Component for App {
-    type Message = ();
-    type Properties = ();
+/// The names and anchors to parts on the page for navigation purposes.
+const PAGES: &'static [(&'static str, &'static str)] = &[("HOME", "#based"), ("RECAP", "#recap")];
 
-    fn create(_ctx: &Context<Self>) -> Self {
-        Self
-    }
-
-    fn view(&self, _ctx: &Context<Self>) -> Html {
-        html! {
-        }
+/// The root of the application.
+#[function_component(App)]
+fn app() -> Html {
+    html! {
+        <>
+            <NavBar pages={PAGES}/>
+            <MainHero />
+            <RecapSection />
+        </>
     }
 }
 
 fn main() {
+    init_with_level(Level::Warn).expect("Could not init logger.");
+
     yew::start_app::<App>();
 }
