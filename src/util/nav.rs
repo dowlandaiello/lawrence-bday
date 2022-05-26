@@ -15,7 +15,7 @@ pub(crate) fn nav_bar(props: &NavBarProps) -> Html {
         .pages
         .iter()
         .map(|(name, anchor)| html! {
-            <a class={classes!("transition", "font-bold", "font-mono", "dark:text-white", "opacity-100", "hover:opacity-70", "border-b-2", "border-transparent", "hover:border-amber-700")} href={ anchor.to_owned() }>{ name }</a>
+            <a class={classes!("transition", "font-bold", "font-mono", "text-white", "opacity-100", "hover:opacity-70", "border-b-2", "border-transparent", "hover:border-amber-700")} href={ anchor.to_owned() }>{ name }</a>
         })
         .collect();
 

@@ -15,9 +15,13 @@ module.exports = {
 			},
 			backgroundImage: {
 				"trident-pattern": "url('/img/trident.png')",
-			}
+			},
+			flexShrink: {
+				"2": 2,
+			},
 		},
 	},
 	variants: {},
 	plugins: [],
+	important: true,
 };

@@ -10,7 +10,7 @@ use chads::ChadSlideshow;
 #[function_component(MainHero)]
 pub(crate) fn main_hero() -> Html {
     html! {
-        <div id="based" class={classes!("h-screen", "w-screen", "dark:bg-stone-900", "grid", "grid-cols-1", "grid-rows-1")}>
+        <div id="based" class={classes!("h-screen", "w-screen", "bg-stone-900", "grid", "grid-cols-1", "grid-rows-1")}>
             <div class={classes!("col-start-1", "row-start-1", "col-span-1", "row-span-1", "z-20", "2xl:ml-80")}>
                 <DetailSection />
             </div>

@@ -10,6 +10,7 @@ gloo-timers = "0.2.4"
 console_log = { version = "0.2", features = ["color"] }
 log = "0.4.17"
 lazy_static = "1.4.0"
+chrono = "0.4.19"
 
 [build-dependencies]
 log = "0.4.17"

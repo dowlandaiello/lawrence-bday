@@ -12,9 +12,9 @@ pub struct SectionHeaderProps<'a> {
 #[function_component(SectionHeader)]
 pub(crate) fn section_header(props: &SectionHeaderProps<'static>) -> Html {
     html! {
-        <div class={classes!("flex", "flex-col", "justify-center", "items-center", "space-y-2")}>
-            <h1 class={classes!("text-3xl", "font-bold", "dark:text-stone-300")}>{props.title}</h1>
-            <p class={classes!("dark:text-stone-400")}>{props.subtitle}</p>
+        <div class={classes!("flex", "flex-col", "justify-center", "items-center", "space-y-2", "mb-16")}>
+            <h1 class={classes!("text-3xl", "font-bold", "text-stone-300")}>{props.title}</h1>
+            <p class={classes!("text-stone-400")}>{props.subtitle}</p>
         </div>
     }
 }
